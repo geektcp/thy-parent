@@ -3248,7 +3248,16 @@
         </repository>
     </distributionManagement>
 
-
+    <repositories>
+        <repository>
+            <id>aliyun</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>spring-releases</id>
+            <url>http://repo.spring.io/libs-release</url>
+        </repository>
+    </repositories>
 
     <profiles>
         <profile>
