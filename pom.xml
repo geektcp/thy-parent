@@ -27,6 +27,9 @@
     <artifactId>thy-parent</artifactId>
     <version>1.0.0</version>
 
+    <name>thy-parent</name>
+    <description>common parent for spring cloud</description>
+
     <properties>
         <activemq.version>5.15.13</activemq.version>
         <antlr2.version>2.7.7</antlr2.version>
