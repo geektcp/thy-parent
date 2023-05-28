@@ -25,7 +25,7 @@
     </developers>
     <groupId>com.geektcp.common</groupId>
     <artifactId>thy-parent</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <name>thy-parent</name>
     <description>common parent for spring cloud</description>
@@ -3059,6 +3059,23 @@
                 <includes>
                     <include>META-INF/*</include>
                 </includes>
+            </resource>
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/application*.yml</include>
+                    <include>**/application*.yaml</include>
+                    <include>**/application*.properties</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+                <excludes>
+                    <exclude>**/application*.yml</exclude>
+                    <exclude>**/application*.yaml</exclude>
+                    <exclude>**/application*.properties</exclude>
+                </excludes>
             </resource>
         </resources>
         <pluginManagement>
